@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(180deg, rgba(26,17,52,1) 0%, rgba(130,98,225,1) 44%, rgba(205,151,248,1) 100%); */
+  background-image: url('https://s31092.pcdn.co/wp-content/uploads/2019/07/Fe.jpg');
+  background-size: cover;
+  background-position: center;
+}
+/* ------------------------------------------------------ */
+.container{
+  min-height: 450px;
+  max-height: 450px;
+  overflow-y: auto;
+  width: 430px;
+  background: #ffffffaf;
+  border-radius: 28px 28px 18px 29px / 18px 18px 0px 0px;
+  box-shadow: 0px 0px 22px 0px rgba(26,17,52,1);
+  padding: 10px;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 18%;
+  left: 52%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 400px;
+  background-image: url('../img/fe-game-character.png');
+  background-size: cover;
+  /* z-index: 10; */
+}
+/* ---------------------------------------------------- */
+#input{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #6d476e;
+  color: white;
+  padding: 0 10px;
+  margin: 15px 0;
+}
+#input::placeholder{
+  color: #bbb;
+}
+/* -------------------------------------- */
+ul li{
+  background: #f5d9f2;
+  color:  #22174a;
+  height: 40px;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding: 10px;
+  position: relative;
+  list-style: none;
+}
+ul .fa-check, .fa-trash{
+  position: absolute;
+  cursor: pointer;
+}
+li:hover{
+  box-shadow: 1px 3px 9px -5px rgba(15,9,29,0.71) inset;
+}
+.fa-check{
+  right: 40px;
+  color: #66befc;
+}
+.fa-trash{
+  right: 15px;
+  color: #0f091d;
+}
+
+.checked{
+  background:  #66bdfca2;
+  text-decoration: line-through;
+  transition: 0.2s;
+}
+
+/* .cursor{
+  width: 10px;
+  height: 10px;
+  background:  #f5d9f2 ;
+  border-radius: 50%;
+  border: solid 3px white;
+  box-shadow: 1px 0px 53px 24px #f5d9f2e5;
+  position: absolute;
+} */
